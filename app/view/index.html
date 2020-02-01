@@ -3,11 +3,16 @@
   <meta charset='utf-8'>
   <link rel='stylesheet' href='../static/style.css'>
   <script src='../static/client.js'></script>
+
+  <style>
+    
+    </style>
 </head>
-<body style="background-image: linear-gradient(rgba(51,51,51,0), rgba(51,51,51,0.5), rgba(102,102,102,0));">
+<body style="background-color:#C5D1DA;">
 <div>
   <div class='center'>
-<!--     <div class='title'>Classify Crop Diseases</div> -->
+    <div class='title'>Classify Crop Diseases</div>
+  <div class='center'>
     <div class='content'>
       <div class='no-display'>
         <input id='file-input'
@@ -17,7 +22,7 @@
                accept='image/*'
                onchange='showPicked(this)'>
       </div>
-      <button class='choose-file-button' type='button' onclick='showPicker()'>Select Image</button>
+      <button class='choose-file-button' style = "border-color: black; color:black;"type='button' onclick='showPicker()'>Select Image</button>
       <div class='upload-label'>
         <label id='upload-label'>No file chosen</label>
       </div>
@@ -25,7 +30,7 @@
         <img id='image-picked' class='no-display' alt='Chosen Image' height='200'>
       </div>
       <div class='analyze'>
-        <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>Analyze</button>
+        <button id='analyze-button' style = "border-color: black; color:black;background-color: grey;" class='analyze-button' type='button' onclick='analyze()'>Analyze</button>
       </div>
       <div class='result-label'>
         <label id='result-label'></label>
